@@ -1,0 +1,212 @@
+/* css reset */
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* cs variable */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+#navbar::before{
+    content: " " ;
+    height: 110%;
+    width: 100%;
+    background-color: rgb(243, 169, 31);
+    z-index: -50;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 8px
+}
+#navbar ul li a{
+    color: rgb(39, 88, 224);
+    margin: 5px;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+
+}
+#navbar ul li a:hover{
+    color: rgba(230, 58, 15, 0.801);
+    background-color: rgb(231, 147, 20);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* navigation bar and logo bar  */
+#logo{
+    height: 21px;
+}
+
+#logo img {
+    height: 1px 1px;
+    margin: -31px 18px;
+    margin-left: 3px;
+    border-radius: 15px;
+}
+
+/* home section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 507px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+    /* font-family: 'Reggae One', cursive; */
+} 
+#home::before{
+    content: " " ;
+    height: 86%;
+    width: 100%;
+    background: url("../img/backgroundFirst\(main.webp") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* services section */
+#services{margin: -3px; display: flex;}
+
+#services .box{border: 3px solid rgb(209, 20, 20); padding: 10px;
+border-radius: 10px; margin: 3px 6px; background-color: rgb(228, 238, 238);}
+
+
+#services .box img{
+    height: 150px;
+    display: block;
+     margin: auto;}
+
+/* #services .box p  { font-style: ;} */
+
+#client-section{
+     /* height: 350px; */
+     /* height: 230px; */
+}
+ 
+#clients{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#clients img{ height: 74px; }
+
+.client-item{
+    padding: 24px;
+}
+
+#client-section::before {
+content: "";
+position: absolute;
+background: url("../img/ourClientsBackgrnd.webp") no-repeat center center/cover;
+width: 100%;
+height: 50%;
+z-index: -1;
+opacity: 0.3;
+}
+
+footer{background: black; color: blanchedalmond; padding: 9px 15px;}
+
+
+/* .client-item img{height: 84px;} */
+
+/* contact classes */
+#contact{
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 28px;
+}
+
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{ font-size: 2.3rem;}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../img/contactUsbackgrnd.jpg") no-repeat center center/cover;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 9px;
+}
+.h-primary center{
+    background-color: rgb(3, 19, 19);
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+#home h2{
+    color: rgb(19, 1, 1);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+   }
+
+.btn{
+    padding: 5px 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgb(230, 215, 84);
+    color:red;
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.btn:hover{font-size: 20px; background-color: rgb(57, 218, 105);}
+
+.center{
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
